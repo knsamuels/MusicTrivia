@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93B3F96F24B65D8600B58829 /* TriviaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B3F96E24B65D8600B58829 /* TriviaViewController.swift */; };
 		C952956724B648F1001BE1E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952956624B648F1001BE1E9 /* AppDelegate.swift */; };
 		C952956924B648F1001BE1E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952956824B648F1001BE1E9 /* SceneDelegate.swift */; };
 		C952956E24B648F1001BE1E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C952956C24B648F1001BE1E9 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93B3F96E24B65D8600B58829 /* TriviaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaViewController.swift; sourceTree = "<group>"; };
 		C952956324B648F1001BE1E9 /* MusicTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C952956624B648F1001BE1E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C952956824B648F1001BE1E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93B3F96D24B65D6200B58829 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93B3F96E24B65D8600B58829 /* TriviaViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		C952955A24B648F1001BE1E9 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +64,7 @@
 		C952956524B648F1001BE1E9 /* MusicTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				93B3F96D24B65D6200B58829 /* Controllers */,
 				C952957A24B64901001BE1E9 /* Resources  */,
 				C952956C24B648F1001BE1E9 /* Main.storyboard */,
 			);
@@ -144,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C952956724B648F1001BE1E9 /* AppDelegate.swift in Sources */,
+				93B3F96F24B65D8600B58829 /* TriviaViewController.swift in Sources */,
 				C952956924B648F1001BE1E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KAP7J6U3Y3;
+				DEVELOPMENT_TEAM = CYXP9477KA;
 				INFOPLIST_FILE = "$(SRCROOT)/MusicTrivia/Resources /Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,7 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KAP7J6U3Y3;
+				DEVELOPMENT_TEAM = CYXP9477KA;
 				INFOPLIST_FILE = "$(SRCROOT)/MusicTrivia/Resources /Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
