@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		93B3F96F24B65D8600B58829 /* TriviaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B3F96E24B65D8600B58829 /* TriviaViewController.swift */; };
 		C92F163224B671A0003F6ACF /* MusicTrivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92F163124B671A0003F6ACF /* MusicTrivia.swift */; };
+		C92F163524B67F2F003F6ACF /* MusicTriviaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92F163424B67F2F003F6ACF /* MusicTriviaError.swift */; };
 		C952956724B648F1001BE1E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952956624B648F1001BE1E9 /* AppDelegate.swift */; };
 		C952956924B648F1001BE1E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952956824B648F1001BE1E9 /* SceneDelegate.swift */; };
 		C952956E24B648F1001BE1E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C952956C24B648F1001BE1E9 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		93B3F96E24B65D8600B58829 /* TriviaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaViewController.swift; sourceTree = "<group>"; };
 		C92F163124B671A0003F6ACF /* MusicTrivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTrivia.swift; sourceTree = "<group>"; };
+		C92F163424B67F2F003F6ACF /* MusicTriviaError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTriviaError.swift; sourceTree = "<group>"; };
 		C952956324B648F1001BE1E9 /* MusicTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C952956624B648F1001BE1E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C952956824B648F1001BE1E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C92F163324B67F11003F6ACF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C92F163424B67F2F003F6ACF /* MusicTriviaError.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		C952955A24B648F1001BE1E9 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +96,7 @@
 		C952956524B648F1001BE1E9 /* MusicTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				C92F163324B67F11003F6ACF /* Helpers */,
 				C92F163024B6715D003F6ACF /* Models */,
 				93B3F96D24B65D6200B58829 /* Controllers */,
 				C92F162F24B6714C003F6ACF /* Views */,
@@ -203,6 +214,7 @@
 				C952958224B664D5001BE1E9 /* MusicTriviaController.swift in Sources */,
 				C952956724B648F1001BE1E9 /* AppDelegate.swift in Sources */,
 				C92F163224B671A0003F6ACF /* MusicTrivia.swift in Sources */,
+				C92F163524B67F2F003F6ACF /* MusicTriviaError.swift in Sources */,
 				93B3F96F24B65D8600B58829 /* TriviaViewController.swift in Sources */,
 				C952956924B648F1001BE1E9 /* SceneDelegate.swift in Sources */,
 			);
