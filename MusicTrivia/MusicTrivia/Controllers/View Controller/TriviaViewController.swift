@@ -14,16 +14,34 @@ class TriviaViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     
+    //MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    //MARK: - Actions
+    @IBAction func trueButtonTapped(_ sender: UIButton) {
+        //if tapped & correct, change to green and add to score
+        //wait 0.2 seconds and update screen
         
     }
     
-    @IBAction func trueButtonTapped(_ sender: UIButton) {
+    @IBAction func falseButtonTapped(_ sender: UIButton) {
+        
+        
     }
     
-    @IBAction func falseButtonTapped(_ sender: UIButton) {
-    }
+    
+    //MARK: - Helper Methods
+    
+    //fetch question & answer -- set questionLabel
+    
     
 }
+
+
+//Timer.scheduledTimer(timeInterval: 0.2, target:self, selector: #selector(updateUI), userInfo:nil, repeats: false)
+
+
+
