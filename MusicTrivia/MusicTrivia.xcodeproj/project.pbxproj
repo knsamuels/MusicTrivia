@@ -13,6 +13,7 @@
 		C952956E24B648F1001BE1E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C952956C24B648F1001BE1E9 /* Main.storyboard */; };
 		C952957024B648F6001BE1E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C952956F24B648F6001BE1E9 /* Assets.xcassets */; };
 		C952957324B648F6001BE1E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C952957124B648F6001BE1E9 /* LaunchScreen.storyboard */; };
+		C952957D24B66147001BE1E9 /* MusicTriviaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952957C24B66147001BE1E9 /* MusicTriviaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C952956F24B648F6001BE1E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C952957224B648F6001BE1E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C952957424B648F6001BE1E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C952957C24B66147001BE1E9 /* MusicTriviaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTriviaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,11 @@
 		C952956524B648F1001BE1E9 /* MusicTrivia */ = {
 			isa = PBXGroup;
 			children = (
+
+				
+
 				93B3F96D24B65D6200B58829 /* Controllers */,
+
 				C952957A24B64901001BE1E9 /* Resources  */,
 				C952956C24B648F1001BE1E9 /* Main.storyboard */,
 			);
@@ -81,6 +87,14 @@
 				C952956824B648F1001BE1E9 /* SceneDelegate.swift */,
 			);
 			path = "Resources ";
+			sourceTree = "<group>";
+		};
+		C952957B24B66112001BE1E9 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C952957C24B66147001BE1E9 /* MusicTriviaController.swift */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C952957D24B66147001BE1E9 /* MusicTriviaController.swift in Sources */,
 				C952956724B648F1001BE1E9 /* AppDelegate.swift in Sources */,
 				93B3F96F24B65D8600B58829 /* TriviaViewController.swift in Sources */,
 				C952956924B648F1001BE1E9 /* SceneDelegate.swift in Sources */,
@@ -306,6 +321,7 @@
 				DEVELOPMENT_TEAM = VVM7Y77C9J;
 
 				INFOPLIST_FILE = "$(SRCROOT)/MusicTrivia/Resources /Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,6 +342,7 @@
 				DEVELOPMENT_TEAM = VVM7Y77C9J;
 
 				INFOPLIST_FILE = "$(SRCROOT)/MusicTrivia/Resources /Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
