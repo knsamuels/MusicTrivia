@@ -13,7 +13,6 @@
 		C952956E24B648F1001BE1E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C952956C24B648F1001BE1E9 /* Main.storyboard */; };
 		C952957024B648F6001BE1E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C952956F24B648F6001BE1E9 /* Assets.xcassets */; };
 		C952957324B648F6001BE1E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C952957124B648F6001BE1E9 /* LaunchScreen.storyboard */; };
-		C952957D24B66147001BE1E9 /* MusicTriviaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952957C24B66147001BE1E9 /* MusicTriviaController.swift */; };
 		C952958224B664D5001BE1E9 /* MusicTriviaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952958124B664D5001BE1E9 /* MusicTriviaController.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		C952956F24B648F6001BE1E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C952957224B648F6001BE1E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C952957424B648F6001BE1E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C952957C24B66147001BE1E9 /* MusicTriviaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTriviaController.swift; sourceTree = "<group>"; };
 		C952958124B664D5001BE1E9 /* MusicTriviaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTriviaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,7 +90,6 @@
 		C952957E24B6646C001BE1E9 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				C952957C24B66147001BE1E9 /* MusicTriviaController.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -184,7 +181,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C952957D24B66147001BE1E9 /* MusicTriviaController.swift in Sources */,
 				C952958224B664D5001BE1E9 /* MusicTriviaController.swift in Sources */,
 				C952956724B648F1001BE1E9 /* AppDelegate.swift in Sources */,
 				93B3F96F24B65D8600B58829 /* TriviaViewController.swift in Sources */,
@@ -332,8 +328,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VVM7Y77C9J;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/MusicTrivia/Resources /Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -342,6 +339,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.KNS.MusicTrivia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -351,8 +349,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VVM7Y77C9J;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/MusicTrivia/Resources /Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -361,6 +360,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.KNS.MusicTrivia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
