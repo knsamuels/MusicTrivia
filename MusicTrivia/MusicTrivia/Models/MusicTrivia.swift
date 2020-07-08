@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+struct TopLevelDictionary: Decodable {
+    var results: [MusicTrivia]
+}
+
+struct MusicTrivia: Decodable {
+    private enum CodingKeys: String, CodingKey {
+        case question
+        case correctAnswer = "correct_answer"
+    }
+    
+    var question: String
+    var correctAnswer: String
+}
