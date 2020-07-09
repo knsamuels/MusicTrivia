@@ -15,9 +15,10 @@ class TriviaViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     
     @IBOutlet weak var trueButton: UIButton!
+    @IBOutlet weak var falseButton: UIButton!
+    
     var correctAnswer: String = ""
     var score: Int = 0
-    @IBOutlet weak var falseButton: UIButton!
     
     //MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -27,15 +28,11 @@ class TriviaViewController: UIViewController {
     
     //MARK: - Actions
     @IBAction func trueButtonTapped(_ sender: UIButton) {
-        //if tapped & correct, change to green and add to score
-        //wait 0.2 seconds and update screen
         checkAnswerTrue()
-        
     }
     
     @IBAction func falseButtonTapped(_ sender: UIButton) {
         checkAnswerFalse()
-        
     }
     
     
@@ -43,17 +40,28 @@ class TriviaViewController: UIViewController {
     func checkAnswerTrue() {
         if correctAnswer == "True" {
             score += 1
-            
-            
+            scoreLabel.text = "Score: \(score)"
+            trueButton.backgroundColor = .green
+        } else {
+            trueButton.backgroundColor = .red
         }
         Timer.scheduledTimer(timeInterval: 0.2, target:self, selector: #selector(fetchQuestionAndUpdateViews), userInfo:nil, repeats: false)
     }
     
     func checkAnswerFalse() {
-        
+        if correctAnswer == "False" {
+            score += 1
+            scoreLabel.text = "Score: \(score)"
+            falseButton.backgroundColor = .green
+        } else {
+            falseButton.backgroundColor = .red
+        }
+        Timer.scheduledTimer(timeInterval: 0.2, target:self, selector: #selector(fetchQuestionAndUpdateViews), userInfo:nil, repeats: false)
     }
     
     @objc func fetchQuestionAndUpdateViews() {
+        trueButton.backgroundColor = .clear
+        falseButton.backgroundColor = .clear
         MusicTriviaController.fetchTrivia { (result) in
             switch result {
             case .success(let MusicTrivia):
@@ -70,9 +78,6 @@ class TriviaViewController: UIViewController {
     
     
 }
-
-
-//Timer.scheduledTimer(timeInterval: 0.2, target:self, selector: #selector(updateUI), userInfo:nil, repeats: false)
 
 
 
