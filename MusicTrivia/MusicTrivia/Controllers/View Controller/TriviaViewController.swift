@@ -9,7 +9,7 @@
 import UIKit
 
 class TriviaViewController: UIViewController {
-
+    
     //MARK: - Properties
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
