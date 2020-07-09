@@ -16,6 +16,7 @@ class TriviaViewController: UIViewController {
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
     
+    var questionCount: Int = 0
     var correctAnswer: String = ""
     var holderString: String = ""
     var score: Int = 0
@@ -39,7 +40,6 @@ class TriviaViewController: UIViewController {
     func checkAnswerTrue() {
         if correctAnswer == "True" {
             score += 1
-            scoreLabel.text = "Score: \(score)"
             trueButton.backgroundColor = .green
         } else {
             trueButton.backgroundColor = .red
@@ -50,7 +50,6 @@ class TriviaViewController: UIViewController {
     func checkAnswerFalse() {
         if correctAnswer == "False" {
             score += 1
-            scoreLabel.text = "Score: \(score)"
             falseButton.backgroundColor = .green
         } else {
             falseButton.backgroundColor = .red
@@ -59,8 +58,14 @@ class TriviaViewController: UIViewController {
     }
     
     @objc func fetchQuestionAndUpdateViews() {
+        questionCount += 1
+        
+        
+        
+        scoreLabel.text = "Score: \(score)"
         trueButton.backgroundColor = #colorLiteral(red: 0.09019608051, green: 0, blue: 0.3019607961, alpha: 1)
         falseButton.backgroundColor = #colorLiteral(red: 0.09019608051, green: 0, blue: 0.3019607961, alpha: 1)
+        
         MusicTriviaController.fetchTrivia { (result) in
             switch result {
             case .success(let MusicTrivia):
