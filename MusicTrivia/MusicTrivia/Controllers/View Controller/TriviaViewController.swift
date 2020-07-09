@@ -9,7 +9,7 @@
 import UIKit
 
 class TriviaViewController: UIViewController {
-
+    
     //MARK: - Properties
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -73,7 +73,6 @@ class TriviaViewController: UIViewController {
                 print("There was an error fetching trivia questions -- \(error) -- \(error.localizedDescription)")
             }
         }
-    }
     }
 }
 
