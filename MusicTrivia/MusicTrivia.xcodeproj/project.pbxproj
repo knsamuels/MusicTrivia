@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		93B3F96F24B65D8600B58829 /* TriviaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B3F96E24B65D8600B58829 /* TriviaViewController.swift */; };
+		A38E52DE24B7870E00821C15 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E52DD24B7870E00821C15 /* AlertController.swift */; };
 		C92F163224B671A0003F6ACF /* MusicTrivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92F163124B671A0003F6ACF /* MusicTrivia.swift */; };
 		C92F163524B67F2F003F6ACF /* MusicTriviaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92F163424B67F2F003F6ACF /* MusicTriviaError.swift */; };
 		C952956724B648F1001BE1E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952956624B648F1001BE1E9 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		93B3F96E24B65D8600B58829 /* TriviaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaViewController.swift; sourceTree = "<group>"; };
+		A38E52DD24B7870E00821C15 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		C92F163124B671A0003F6ACF /* MusicTrivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTrivia.swift; sourceTree = "<group>"; };
 		C92F163424B67F2F003F6ACF /* MusicTriviaError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTriviaError.swift; sourceTree = "<group>"; };
 		C952956324B648F1001BE1E9 /* MusicTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				93B3F96E24B65D8600B58829 /* TriviaViewController.swift */,
+				A38E52DD24B7870E00821C15 /* AlertController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				C952956724B648F1001BE1E9 /* AppDelegate.swift in Sources */,
 				C92F163224B671A0003F6ACF /* MusicTrivia.swift in Sources */,
 				C92F163524B67F2F003F6ACF /* MusicTriviaError.swift in Sources */,
+				A38E52DE24B7870E00821C15 /* AlertController.swift in Sources */,
 				93B3F96F24B65D8600B58829 /* TriviaViewController.swift in Sources */,
 				C952956924B648F1001BE1E9 /* SceneDelegate.swift in Sources */,
 			);
