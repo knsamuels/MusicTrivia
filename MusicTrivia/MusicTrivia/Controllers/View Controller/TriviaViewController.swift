@@ -60,8 +60,8 @@ class TriviaViewController: UIViewController {
     }
     
     @objc func fetchQuestionAndUpdateViews() {
-        trueButton.backgroundColor = .clear
-        falseButton.backgroundColor = .clear
+        trueButton.backgroundColor = #colorLiteral(red: 0.09019608051, green: 0, blue: 0.3019607961, alpha: 1)
+        falseButton.backgroundColor = #colorLiteral(red: 0.09019608051, green: 0, blue: 0.3019607961, alpha: 1)
         MusicTriviaController.fetchTrivia { (result) in
             switch result {
             case .success(let MusicTrivia):
