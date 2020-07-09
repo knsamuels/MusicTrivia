@@ -52,7 +52,7 @@ class MusicTriviaController {
                 guard let trivaItem = triviaItemArray.first else {return}
                 return completion(.success(trivaItem))
             } catch {
-                return completion(.failure(.unableToDecode(error)))
+                return completion(.failure(.unableToDecode))
             }
         }.resume()
     }
