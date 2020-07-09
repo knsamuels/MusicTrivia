@@ -75,7 +75,9 @@ class TriviaViewController: UIViewController {
         }
     }
     
-    
+    func youWon() {
+        
+    }
     
 }
 
