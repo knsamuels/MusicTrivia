@@ -60,7 +60,9 @@ class TriviaViewController: UIViewController {
     @objc func fetchQuestionAndUpdateViews() {
         questionCount += 1
         
-        
+        if questionCount == 11 {
+            finishGame()
+        }
         
         scoreLabel.text = "Score: \(score)"
         trueButton.backgroundColor = #colorLiteral(red: 0.09019608051, green: 0, blue: 0.3019607961, alpha: 1)
@@ -78,6 +80,23 @@ class TriviaViewController: UIViewController {
                 print("There was an error fetching trivia questions -- \(error) -- \(error.localizedDescription)")
             }
         }
+    }
+    
+    func finishGame(){
+        var title = ""
+        var message = ""
+        
+        if score >= 8 {
+            title = "Congratulations!!"
+            message = "Fantastic job! You scored \(score)!!"
+        } else if score >= 6 {
+            title = "Doing Great!"
+            message = "Good Job! You scored \(score)."
+        } else {
+            title = "Keep Trying"
+            message = "You scored \(score). Play again."
+        }
+        alertController(title: title, message: message)
     }
     
     func cleanUpString(string: String) -> String {
