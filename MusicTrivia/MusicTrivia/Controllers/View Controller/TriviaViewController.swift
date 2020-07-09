@@ -13,11 +13,11 @@ class TriviaViewController: UIViewController {
     //MARK: - Properties
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
-    
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
     
     var correctAnswer: String = ""
+    var holderString: String = ""
     var score: Int = 0
     
     //MARK: - Lifecycle Methods
@@ -34,7 +34,6 @@ class TriviaViewController: UIViewController {
     @IBAction func falseButtonTapped(_ sender: UIButton) {
         checkAnswerFalse()
     }
-    
     
     //MARK: - Helper Methods
     func checkAnswerTrue() {
@@ -66,7 +65,8 @@ class TriviaViewController: UIViewController {
             switch result {
             case .success(let MusicTrivia):
                 DispatchQueue.main.async {
-                    self.questionLabel.text = MusicTrivia.question
+                    self.holderString = MusicTrivia.question
+                    self.questionLabel.text = self.cleanUpString(string: self.holderString)
                     self.correctAnswer = MusicTrivia.correctAnswer
                 }
             case .failure(let error):
@@ -75,9 +75,11 @@ class TriviaViewController: UIViewController {
         }
     }
     
-    
-    
+    func cleanUpString(string: String) -> String {
+        var newString = string.replacingOccurrences(of: "&quot;", with: "\"", options: .literal, range: nil)
+        newString = newString.replacingOccurrences(of: "&#039;", with: "\'", options: .literal, range: nil)
+        
+        return newString
+    }
 }
-
-
 
