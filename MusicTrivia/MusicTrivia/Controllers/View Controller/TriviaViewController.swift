@@ -74,11 +74,7 @@ class TriviaViewController: UIViewController {
             }
         }
     }
-    
-    func takeANap() {
-        
     }
-    
 }
 
 
